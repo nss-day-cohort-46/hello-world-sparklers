@@ -1,19 +1,23 @@
-.header {
-
+header {
+    display: flex;
+    background-color: steelblue;
 }
 
-.header > img {
-
+header > img {
+    width: 150px;
 }
 
 .header__right {
-
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
 }
 
 .title {
-
+    align-self: center;
 }
 
 .header__right > nav {
-    
+    display: flex;
+    justify-content: space-around;
 }
