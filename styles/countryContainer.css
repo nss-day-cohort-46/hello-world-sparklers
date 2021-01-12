@@ -1,45 +1,87 @@
 .countryContainer {
-
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: space-between;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .countryContainer__header {
-
+display: flex;
+width: 100%;
+padding: 5px;
+border: 2px black solid;
 }
 
 .countryContainer__img {
-
+justify-content: left;
+max-height: 215px;
+flex: 25%;
 }
 
 .countryContainer__countryName {
-
+display: flex;
+align-items: center;
+justify-content: center;
+flex: 0 0 75%;
+font-size: 4em;
 }
 
 .countryContainer__details {
-
+display: flex;
+flex-flow: wrap column;
 }
 
 .countryContainer__cities {
-
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-between;
+padding: 5px;
+margin: 5px;
 }
 
 .cityCard {
 
 }
 
-.cityCard__img {
+.cityCardHead {
+    padding: 0 0 0 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
 
+.cityCard__img {
+max-height: 300px;
+border-radius: 25px
 }
 
 .cityCard__name {
-
+align-items: center;
 }
 
 .countryContainer__info {
-
+display: flex;
+flex-flow: nowrap row;
 }
 
 .countryContainer__landmarks {
+display: flex;
+flex-flow: wrap column;
+width: 49%;
+justify-content: space-between;
+padding: 5px;
+margin: 5px;
+align-items: center;
 
+}
+
+.landmarksHead {
+    padding: 0 0 0 10px;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .countryContainer__card {
@@ -47,7 +89,8 @@
 }
 
 .countryContainer__card-img {
-
+max-width: 400px;
+border-radius: 25px
 }
 
 .countryContainer__card-name {
@@ -55,5 +98,18 @@
 }
 
 .countryContainer__citizens {
+display: flex;
+flex-flow: wrap column;
+width: 49%;
+justify-content: space-between;
+padding: 5px;
+margin: 5px;
+align-items: center;
 
+}
+
+.citizensHead {
+    padding: 0 0 0 10px;
+    font-size: 36px;
+    font-weight: bold;
 }
