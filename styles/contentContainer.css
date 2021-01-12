@@ -1,0 +1,19 @@
+.contentContainer{
+
+}
+
+.countryCard{
+    background-color: lightgray;
+    margin: 10px;
+    display: flex;
+}
+
+.countryCard__img {
+    width: 33%;
+}
+
+.countryCard__details {
+    width: 67%;
+    display: flex;
+    align-items: center;
+}
