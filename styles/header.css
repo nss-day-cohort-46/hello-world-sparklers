@@ -24,3 +24,7 @@ header > img {
     display: flex;
     justify-content: space-around;
 }
+
+.nav--current{
+    background-color: lightyellow;
+}
