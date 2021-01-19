@@ -5,6 +5,6 @@ export const Landmark = (landmark) => {
             <p class="countryContainer__card-name">
                 <a href="${landmark.wiki}">${landmark.landmarkName}</a>
             </p>
-        </section>
+        </article>
     `
 }
