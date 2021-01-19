@@ -4,7 +4,7 @@ import { Celebrities } from './Celebrities.js'
 export const CelebritiesList = () => {
     const contentElement = document.querySelector(".countryContainer__citizens")
     const celebrities = useCelebrities()
-    let citiesHTMLRepresentations = ""
+    let celebritiesHTMLRepresentations = ""
     for (const celeb of celebrities) {
         celebritiesHTMLRepresentations += Celebrities(celeb)
     }
