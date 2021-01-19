@@ -1,4 +1,4 @@
-import { useCities } from './CitiesDataProvider.js/'
+import { useCities } from './CitiesDataProvider.js'
 import { Cities } from './Cities.js'
 
 export const CitiesList = () => {
@@ -8,8 +8,8 @@ export const CitiesList = () => {
     for (const city of cities) {
         citiesHTMLRepresentations += Cities(city)
     }
+    contentElement.innerHTML += `
+        ${citiesHTMLRepresentations}
+    `
 }
 
-contentElement.innerHTML += `
-    ${citiesHTMLRepresentations}
-`
