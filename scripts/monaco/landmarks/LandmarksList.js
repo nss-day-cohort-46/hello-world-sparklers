@@ -2,26 +2,26 @@
  *  LocationList which renders individual blog objects as HTML
  */
 
-import { useBlog } from './BlogDataProvider.js'
-import { Blog } from './Blog.js'
+import { useLandmarks } from './LandmarksDataProvider.js'
+import { Landmark } from './Landmarks.js'
 
-export const BlogList = () => {
+export const LandmarkList = () => {
 
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".landmarksHead")
-    const blogs = useBlog()
+    const landmarks = useLandmarks()
 
-    let blogHTMLRepresentations = ""
-    for (const blog of blogs) {
-        blogHTMLRepresentations += Blog(blog)
+    let landmarkHTMLRepresentations = ""
+    for (const landmark of landmarks) {
+        landmarkHTMLRepresentations += Landmark(landmark)
 
     }
 
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
-        <div class="blogCards">
-        ${blogHTMLRepresentations}
-        </div>
+        
+        ${landmarkHTMLRepresentations}
+        
     `
 }

@@ -85,6 +85,11 @@ align-items: center;
     font-weight: bold;
 }
 
+.landmarksHead__name {
+    font-size: 16;
+    
+}
+
 .countryContainer__card {
 
 }
