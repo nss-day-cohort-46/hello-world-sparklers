@@ -1,15 +1,16 @@
 import { useCities } from './CitiesDataProvider.js'
-import { Cities } from './Cities.js'
+import { City } from './Cities.js'
 
 export const CitiesList = () => {
     const contentElement = document.querySelector(".countryContainer__cities")
     const cities = useCities()
-    let citiesHTMLRepresentations = ""
+    
+    let citiesHTMLRepresentation = ""
     for (const city of cities) {
-        citiesHTMLRepresentations += Cities(city)
+        citiesHTMLRepresentation += City(city)
     }
-    contentElement.innerHTML += `
-        ${citiesHTMLRepresentations}
-    `
+        
+    contentElement.innerHTML += 
+        `${citiesHTMLRepresentation}`
+    
 }
-
