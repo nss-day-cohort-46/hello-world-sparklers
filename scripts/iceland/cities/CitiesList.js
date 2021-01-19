@@ -1,4 +1,4 @@
-import { useCities } from './CitiesDataProvider.js/'
+import { useCities } from './CitiesDataProvider.js'
 import { City } from './Cities.js'
 
 export const CitiesList = () => {
