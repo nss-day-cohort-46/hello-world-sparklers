@@ -8,7 +8,7 @@ import { Landmark } from './Landmarks.js'
 export const LandmarkList = () => {
 
     // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector(".landmarksHead")
+    const contentElement = document.querySelector(".countryContainer__landmarks")
     const landmarks = useLandmarks()
 
     let landmarkHTMLRepresentations = ""
