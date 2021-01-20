@@ -1,9 +1,9 @@
 export const Landmarks = (landmark) => {
-    `
+    return `
     <section class="countryContainer__card">
-        <p class="countryContainer__card-img">${landmark.image}</p>
+        <img class="countryContainer__card-img" src="${landmark.image}">
         <p class="countryContainer__card-name">
-            <a href=${landmark.wiki}>${landmark.name}</a>
+            <a href="${landmark.wiki}">${landmark.name}</a>
         </p>
     </section>
     `

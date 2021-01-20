@@ -11,7 +11,7 @@ const landmarksCollection = [
     },
     {
         name: "Blue Lagoon",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTXvRIuXdy1EAvq2z_B3mlYBljPs4V-t2dg&usqp=CAU",
+        image: "https://adventures.is/media/225023/social-media-blue-lagoon-night.jpg",
         wiki: "https://aviewoutside.com/wp-content/uploads/2019/05/shutterstock_497026894.jpg"
     },
 ]
