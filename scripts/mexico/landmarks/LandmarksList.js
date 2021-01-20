@@ -1,12 +1,12 @@
 import { useLandmarks } from './LandmarksDataProvider.js'
-import { Cities } from './Cities.js'
+import { Landmarks } from './Landmarks.js'
 
 export const LandmarksList = () => {
     const contentElement = document.querySelector(".countryContainer__landmarks")
     const landmarks = useLandmarks()
     let landmarksHTMLRepresentations = ""
     for (const landmark of landmarks) {
-        landmarkHTMLRepresentations += Landmarks(landmark)
+        landmarksHTMLRepresentations += Landmarks(landmark)
     }
     contentElement.innerHTML += `
         ${landmarksHTMLRepresentations}
